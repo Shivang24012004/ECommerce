@@ -8,6 +8,10 @@ import categoryRoutes from "./routes/categoryRoute.js"
 import productRoute from "./routes/productRoute.js"
 import cors from 'cors';
 import path from "path";
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 //configure env
 dotenv.config();  //{path:xyz} if in another folder...
